@@ -14,16 +14,21 @@
             height: 100vh;
             background-color: #000;
         }
-        video {
-            max-width: 100%;
-            max-height: 100%;
+        .video-container {
+            width: 100%;
+            max-width: 800px;
+            aspect-ratio: 16 / 9;
+        }
+        iframe {
+            width: 100%;
+            height: 100%;
+            border: none;
         }
     </style>
 </head>
 <body>
-    <video controls>
-        <source src="https://drive.google.com/uc?export=download&id=1JnZZ2CCCNBXLtiaZZUB43OG5U31fqPGz" type="video/mp4">
-        Your browser does not support the video tag.
-    </video>
+    <div class="video-container">
+        <iframe src="https://www.youtube.com/embed/Gir4PdTOqN4?si=mA1yifzhuxrqb9aB" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </div>
 </body>
 </html>
